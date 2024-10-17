@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carpooling App</h1>
+        <nav>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+            <button id="viewRidesBtn">View Rides</button>
+            <button id="createRideBtn">Create Ride</button>
+        </nav>
+
+        <div id="content">
+            <!-- Registration Form -->
+            <form id="registrationForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- Create Ride Form -->
+            <form id="rideForm">
+                <input type="text" id="departureLocation" placeholder="Departure Location" required>
+                <input type="text" id="destination" placeholder="Destination" required>
+                <input type="datetime-local" id="departureTime" required>
+                <button type="submit">Create Ride</button>
+            </form>
+
+            <!-- Book Ride -->
+            <div>
+                <input type="text" id="rideId" placeholder="Ride ID" required>
+                <button id="bookRideButton">Book Ride</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
